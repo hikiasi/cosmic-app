@@ -118,3 +118,7 @@ coverage/
 # Temporary files
 *.tmp
 *.temp 
+
+# Local images (keep folder, ignore files)
+# public/images/*
+# !public/images/.gitkeep

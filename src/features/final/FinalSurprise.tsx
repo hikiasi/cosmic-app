@@ -16,7 +16,7 @@ export function FinalSurprise({ isOpen, onClose }: FinalSurpriseProps) {
         </button>
         <div className="grid md:grid-cols-2 gap-0">
           <div className="h-72 md:h-full">
-            <img src="https://downloader.disk.yandex.ru/preview/99d3029d55bf6a1d641198eb8775250c6d71cbf74a8687d9b48b57be8f520450/689b98b2/uqdg4TTbzsdPyD-mcF5s0If5F7bHobYE5tf6EU2SEsUVTSEUUKmE9XwiIsvxd1k8sSF3Pa1S3BrD_cW9BUJx_Q%3D%3D?uid=0&filename=photo_2025-08-12_17-40-21.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=2048x2048" alt="Мы вдвоем" className="w-full h-full object-cover" />
+            <img src="/images/final.jpg" alt="Мы вдвоем" className="w-full h-full object-cover" />
           </div>
           <div className="p-6 md:p-8 text-pink-100 space-y-4">
             <h3 className="text-2xl text-pink-200">Мое главное послание</h3>
