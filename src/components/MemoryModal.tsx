@@ -17,13 +17,15 @@ export function MemoryModal({ isOpen, onClose, type, title, date, description, e
 
   return (
     <>
-      <div
+      <button
+        type="button"
         className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 transition-opacity duration-300"
         onClick={onClose}
+        aria-label="Закрыть модал"
       />
       
       <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
-        <div className="bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 rounded-2xl max-w-md w-full max-h-[80vh] overflow-hidden shadow-2xl border border-pink-400/30 animate-modal-appear">
+        <div className="bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 rounded-2xl max-w-md w-full max-h-[85vh] overflow-hidden shadow-2xl border border-pink-400/30 animate-modal-appear flex flex-col">
           <div className="relative p-6 bg-gradient-to-r from-pink-500/20 to-purple-500/20">
             <button
               onClick={onClose}
@@ -42,7 +44,7 @@ export function MemoryModal({ isOpen, onClose, type, title, date, description, e
             )}
           </div>
           
-          <div className="p-6 space-y-4 overflow-y-auto">
+          <div className="p-6 space-y-4 overflow-y-auto flex-1 min-h-0">
             {imageUrl && (
               <div className="w-full h-48 rounded-lg overflow-hidden">
                 <ImageWithFallback
